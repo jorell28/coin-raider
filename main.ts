@@ -1,4 +1,4 @@
-let score = 0
+ let score = 0
 let bob = sprites.create(img`
     . . . . . . f f f f . . . . . .
     . . . . f f f 2 2 f f f . . . .
@@ -149,7 +149,7 @@ bob.setPosition(10, 10)
 enemy.setPosition(150, 100)
 enemy2.setPosition(130, 110)
 enemy3.setPosition(130, 100)
-game.showLongText("Collect the coins and get to the exit while avoiding ghosts!", DialogLayout.Bottom)
+game.showLongText("Collect the coins and get to the exit while avoiding Phantoms!", DialogLayout.Bottom)
 forever(function(){
     enemy.follow(bob, 70, 70)
     enemy2.follow(bob, 60, 60)
