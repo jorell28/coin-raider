@@ -121,14 +121,22 @@ let mySprite10 = sprites.create(img`
     . . f f f f . .
 `, SpriteKind.Food)
 let exit = sprites.create(img`
-    f f f f f f f f f f f f f f f f f f
-    f 2 2 2 f 2 f f f f 2 f 2 f f 2 f f
-    f 2 f f f f 2 f f 2 f f f f f 2 f f
-    f 2 f f f f f 2 2 f f f 2 f 2 2 2 f
-    f 2 2 2 f f f 2 2 f f f 2 f f 2 f f
-    f 2 f f f f 2 f f 2 f f 2 f f 2 f f
-    f 2 2 2 f 2 f f f f 2 f 2 f f 2 f f
-    f f f f f f f f f f f f f f f f f f
+    . . . . . . . . . . . . . . . .
+    . . . . . . 6 6 6 6 . . . . . .
+    . . . . 6 6 6 5 5 6 6 6 . . . .
+    . . . 7 7 7 7 6 6 6 6 6 6 . . .
+    . . 6 7 7 7 7 8 8 8 1 1 6 6 . .
+    . . 7 7 7 7 7 8 8 8 1 1 5 6 . .
+    . 6 7 7 7 7 8 8 8 8 8 5 5 6 6 .
+    . 6 7 7 7 8 8 8 6 6 6 6 5 6 6 .
+    . 6 6 7 7 8 8 6 6 6 6 6 6 6 6 .
+    . 6 8 7 7 8 8 6 6 6 6 6 6 6 6 .
+    . . 6 8 7 7 8 6 6 6 6 6 8 6 . .
+    . . 6 8 8 7 8 8 6 6 6 8 6 6 . .
+    . . . 6 8 8 8 8 8 8 8 8 6 . . .
+    . . . . 6 6 8 8 8 8 6 6 . . . .
+    . . . . . . 6 6 6 6 . . . . . .
+    . . . . . . . . . . . . . . . .
 `, SpriteKind.Projectile)
 let enemy = sprites.create(assets.image`myImage`, SpriteKind.Enemy)
 let enemy2 = sprites.create(assets.image`myImage0`, SpriteKind.Enemy)
@@ -140,7 +148,7 @@ mySprite3.setPosition(Math.randomRange(1, 160), Math.randomRange(1, 120))
 mySprite4.setPosition(Math.randomRange(1, 160), Math.randomRange(1, 120))
 mySprite5.setPosition(Math.randomRange(1, 160), Math.randomRange(1, 120))
 mySprite6.setPosition(Math.randomRange(1, 160), Math.randomRange(1, 120))
-exit.setPosition(150, 115)
+exit.setPosition(152, 113)
 mySprite7.setPosition(Math.randomRange(1, 160), Math.randomRange(1, 120))
 mySprite8.setPosition(Math.randomRange(1, 160), Math.randomRange(1, 120))
 mySprite9.setPosition(Math.randomRange(1, 160), Math.randomRange(1, 120))
@@ -149,7 +157,7 @@ bob.setPosition(10, 10)
 enemy.setPosition(150, 100)
 enemy2.setPosition(130, 110)
 enemy3.setPosition(130, 100)
-game.showLongText("Collect the coins and get to the exit while avoiding Phantoms!", DialogLayout.Bottom)
+game.showLongText("Collect the coins and get to the Portal while avoiding Phantoms!", DialogLayout.Bottom)
 forever(function(){
     enemy.follow(bob, 70, 70)
     enemy2.follow(bob, 60, 60)
